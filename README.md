@@ -9,7 +9,7 @@ CareerMate AI is an AI-powered web application designed to help fresh graduates 
  Live Demo
 
 **Live URL:**
-https://v0.app/aminashoaib099-9415s-projects/chat/careermate-ai-gpGbekgFfQ7
+https://careermate-ai-beta.vercel.app/
 
 ---
 
