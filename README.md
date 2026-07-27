@@ -1,121 +1,168 @@
 # CareerMate AI
 
-> Your personal AI resume coach for fresh graduates.
+## 🚀 Overview
 
-CareerMate AI helps students and fresh graduates improve their resumes **before** they apply for jobs. Paste your resume, enter your target job title, and get an instant, personalized review — a score out of 100 plus strengths, weaknesses, missing skills, improvement suggestions and interview tips.
-
----
-
-## Problem Statement
-
-Fresh graduates rarely get honest feedback on their resumes before applying. They don't know what recruiters look for, resumes get silently rejected by screening systems, and there's no easy way to tell whether a resume is strong or weak until it's already too late. CareerMate AI closes that gap by acting as an always-available resume coach that reviews a resume in seconds and tells the candidate exactly how to improve it.
+CareerMate AI is an AI-powered web application designed to help fresh graduates and job seekers improve their resumes before applying for jobs. Many graduates struggle to identify weaknesses in their resumes and prepare for interviews. This application provides instant AI-generated feedback, helping users build stronger resumes and increase their chances of getting shortlisted.
 
 ---
 
-## Features
+ Live Demo
 
-- **Home Page** — Modern hero section, professional blue-and-white theme, navigation bar and footer.
-- **Resume Analysis Page** — Paste resume text into a large textarea, enter a desired job title, and click **Analyze Resume**.
-- **AI Analysis** — Generates an overall score (out of 100), resume strengths, weaknesses, missing skills, suggested improvements and interview tips. Results change based on resume length and detected keywords.
-- **History** — Every analysis is saved to browser Local Storage, showing job title, score and date, with **View Details** and **Delete** actions (plus **Clear all**).
-- **About Page** — Explains how CareerMate AI helps students and fresh graduates.
-- **Contact Page** — Simple contact form with Name, Email and Message (with validation).
-- **Polished UI** — Beautiful cards, rounded buttons, icons, smooth animations and a fully responsive mobile-first layout.
+**Live URL:**
+https://v0.app/aminashoaib099-9415s-projects/chat/careermate-ai-gpGbekgFfQ7
 
 ---
 
-## AI Feature
+ Problem Statement
 
-The app acts as an **AI Resume Coach**. It evaluates resume quality using rule-based JavaScript logic and provides personalized feedback, strengths, weaknesses, missing skills, interview tips and an overall score.
+Fresh graduates often submit resumes without knowing whether they meet industry expectations. They may miss important technical skills, use weak descriptions, or fail to highlight their strengths.
 
-Under the hood, the analysis engine (`lib/analyze.ts`) inspects:
-
-- **Length** — is the resume detailed but concise?
-- **Sections** — Summary, Experience, Education, Skills, Projects, Certifications.
-- **Action verbs** — strong verbs like *built, led, improved, launched*.
-- **Quantified achievements** — numbers, percentages and metrics that prove impact.
-- **Role-specific skills** — matched against a library for roles like Frontend Developer, Data Analyst, Product Manager and more, to surface missing skills.
-- **Contact info & links** — email, phone, LinkedIn / GitHub / portfolio.
-
-These signals are weighted into a score out of 100 and turned into tailored, human-readable feedback — so two different resumes get genuinely different reviews.
+CareerMate AI solves this problem by providing an intelligent resume analysis that gives personalized feedback and practical suggestions for improvement.
 
 ---
 
-## Technologies Used
+ Features
 
-- **React** (Next.js App Router)
-- **Tailwind CSS**
-- **JavaScript / TypeScript**
-- **Browser Local Storage** (no backend — everything runs client-side and stays private)
-- **lucide-react** for icons
+- AI-powered Resume Analysis
+- Resume Score (0–100)
+- Strength Analysis
+- Weakness Detection
+- Missing Skills Suggestions
+- Resume Improvement Recommendations
+- Interview Preparation Tips
+- Job Role Input
+- Responsive Mobile-Friendly Design
+- Analysis History using Browser Local Storage
+- Modern User Interface
 
 ---
 
-## Folder Structure
+AI Feature
+
+The application includes an AI-powered Resume Coach.
+
+The AI analyzes the resume provided by the user and generates:
+
+- Resume Score
+- Strengths
+- Weaknesses
+- Missing Skills
+- Resume Improvement Suggestions
+- Personalized Interview Tips
+
+The AI feature is designed to simulate intelligent resume evaluation and provide meaningful career guidance for students and fresh graduates.
+
+---
+
+ Technologies Used
+
+- React
+- JavaScript
+- Tailwind CSS
+- HTML5
+- CSS3
+- Browser Local Storage
+- AI-powered UI Generation
+- GitHub
+- Vercel
+
+
+
+---
+
+# ⚙️ Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/Amina-shoaib/careermate-ai.git
+```
+
+Open the project
+
+```bash
+cd careermate-ai
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Run the development server
+
+```bash
+npm run dev
+```
+
+Open your browser
 
 ```
-app/
-  layout.tsx         # Root layout: fonts, navbar, footer, metadata
-  globals.css        # Blue & white theme tokens
-  page.tsx           # Home page
-  analyze/page.tsx   # Resume analysis page
-  history/page.tsx   # Saved analyses (Local Storage)
-  about/page.tsx     # About page
-  contact/page.tsx   # Contact form
-components/
-  navbar.tsx
-  footer.tsx
-  analysis-result.tsx  # Reusable score + feedback view
-  ui/button.tsx
-lib/
-  analyze.ts         # The AI resume analysis engine
-  storage.ts         # Local Storage helpers
+http://localhost:5173
 ```
 
 ---
 
-## Installation Steps
+#Project Structure
 
-1. **Clone / download** the project.
-
-2. **Install dependencies:**
-
-   ```bash
-   pnpm install
-   # or: npm install
-   ```
-
-3. **Run the development server:**
-
-   ```bash
-   pnpm dev
-   # or: npm run dev
-   ```
-
-4. Open [http://localhost:3000](http://localhost:3000) in your browser.
-
-5. **Build for production:**
-
-   ```bash
-   pnpm build && pnpm start
-   ```
+```
+CareerMate-AI
+│
+├── app/
+├── components/
+├── public/
+├── styles/
+├── package.json
+├── README.md
+└── ...
+```
 
 ---
 
-## Screenshots
+How It Works
 
-<!-- Add your screenshots here -->
-
-| Home | Resume Analysis |
-| --- | --- |
-| _screenshot placeholder_ | _screenshot placeholder_ |
-
-| Analysis Results | History |
-| --- | --- |
-| _screenshot placeholder_ | _screenshot placeholder_ |
+1. Open the application.
+2. Enter the desired job title.
+3. Paste your resume into the text area.
+4. Click **Analyze Resume**.
+5. The AI evaluates the resume.
+6. View your score, strengths, weaknesses, missing skills, and interview tips.
+7. Previous analyses are automatically saved in Local Storage.
 
 ---
 
-## License
+Target Users
 
-Free to use for learning and personal projects.
+- Fresh Graduates
+- University Students
+- Internship Applicants
+- Entry-Level Job Seekers
+
+---
+
+Future Improvements
+
+- PDF Resume Upload
+- LinkedIn Profile Analysis
+- ATS Compatibility Score
+- AI Cover Letter Generator
+- Job Recommendation System
+- Multiple Resume Templates
+
+---
+
+ Developer
+
+**Amina Shoaib**
+
+BS Computer Science Graduate
+
+GitHub:
+https://github.com/Amina-shoaib
+
+---
+
+License
+
+This project is developed for educational purposes as the final project for the AI App Development course.
